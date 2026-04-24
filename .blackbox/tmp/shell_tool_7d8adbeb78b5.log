@@ -35,3 +35,5 @@
 2026-04-24T02:40:52Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
 2026-04-24T02:42:17Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
 2026-04-24T02:47:22Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-24T02:52:27Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-24T02:57:32Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
