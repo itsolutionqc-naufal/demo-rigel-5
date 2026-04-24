@@ -1,0 +1,562 @@
+2026-04-23T02:43:51Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-04-23T02:43:51Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-04-23T02:43:55Z INF +--------------------------------------------------------------------------------------------+
+2026-04-23T02:43:55Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-04-23T02:43:55Z INF |  https://give-suppose-use-istanbul.trycloudflare.com                                       |
+2026-04-23T02:43:55Z INF +--------------------------------------------------------------------------------------------+
+2026-04-23T02:43:55Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-04-23T02:43:55Z INF Version 2026.2.0 (Checksum f32ece46ec52d21d322077b94cdc76bdd602f3061dfaaefd7fb0aa424268cad5)
+2026-04-23T02:43:55Z INF GOOS: darwin, GOVersion: go1.24.2, GoArch: amd64
+2026-04-23T02:43:55Z INF Settings: map[ha-connections:1 no-autoupdate:true p:http2 protocol:http2 url:http://127.0.0.1:8000]
+2026-04-23T02:44:05Z ERR Failed to fetch features, default to disable error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T02:44:05Z INF Generated Connector ID: 2203e69f-9ef4-4cce-8022-74d15acf4da9
+2026-04-23T02:44:15Z INF Initial protocol http2
+2026-04-23T02:44:15Z INF ICMP proxy will use 192.168.1.94 as source for IPv4
+2026-04-23T02:44:15Z INF ICMP proxy will use fe80::1454:7b61:705d:d632 in zone en0 as source for IPv6
+2026-04-23T02:44:15Z INF Created ICMP proxy listening on 192.168.1.94:0
+2026-04-23T02:44:25Z INF ICMP proxy will use 192.168.1.94 as source for IPv4
+2026-04-23T02:44:25Z INF ICMP proxy will use fe80::1454:7b61:705d:d632 in zone en0 as source for IPv6
+2026-04-23T02:44:25Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-04-23T02:44:35Z INF Registered tunnel connection connIndex=0 connection=d9fc487c-6f3d-4156-8ba4-60890d3e0604 event=0 ip=198.41.192.107 location=sin16 protocol=http2
+2026-04-23T02:44:40Z ERR Failed to initialize DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:49:45Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:54:50Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:59:55Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:05:00Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:08:42Z INF Lost connection with the edge connIndex=0
+2026-04-23T03:08:42Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.107
+2026-04-23T03:08:42Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.107
+2026-04-23T03:08:42Z ERR failed to serve incoming request error="Error shutting down control stream: context canceled"
+2026-04-23T03:08:44Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2026-04-23T03:08:45Z ERR Unable to establish connection with Cloudflare edge error="DialContext error: dial tcp 198.41.192.107:7844: connect: network is unreachable" connIndex=0 event=0 ip=198.41.192.107
+2026-04-23T03:08:45Z ERR Serve tunnel error error="DialContext error: dial tcp 198.41.192.107:7844: connect: network is unreachable" connIndex=0 event=0 ip=198.41.192.107
+2026-04-23T03:08:45Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.107
+2026-04-23T03:08:48Z ERR Connection terminated error="DialContext error: dial tcp 198.41.192.107:7844: connect: network is unreachable" connIndex=0
+2026-04-23T03:09:41Z INF Lost connection with the edge connIndex=0
+2026-04-23T03:09:41Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T03:09:41Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T03:09:46Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2026-04-23T03:10:05Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:10:21Z INF Registered tunnel connection connIndex=0 connection=b5a16937-eea1-4875-adb9-5d170b6d3619 event=0 ip=198.41.192.77 location=sin19 protocol=http2
+2026-04-23T03:13:16Z INF Lost connection with the edge connIndex=0
+2026-04-23T03:13:16Z ERR failed to serve incoming request error="Error shutting down control stream: client disconnected"
+2026-04-23T03:13:16Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T03:13:16Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T03:13:17Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2026-04-23T03:14:38Z INF Registered tunnel connection connIndex=0 connection=a061f97c-3d8e-4bf2-8ad0-052c8de5859f event=0 ip=198.41.192.77 location=sin09 protocol=http2
+2026-04-23T03:15:10Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:20:15Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:25:20Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:30:27Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:35:32Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:40:37Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:44:16Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T03:45:42Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:50:47Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T03:55:52Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:00:57Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:06:02Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:11:07Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:16:12Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:21:17Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:26:22Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:28:51Z INF Lost connection with the edge connIndex=0
+2026-04-23T04:28:51Z ERR failed to serve incoming request error="Error shutting down control stream: context canceled"
+2026-04-23T04:28:51Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T04:28:51Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T04:28:53Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2026-04-23T04:29:02Z INF Registered tunnel connection connIndex=0 connection=710297cd-0172-47a7-9d43-295bb53994ac event=0 ip=198.41.192.77 location=sin19 protocol=http2
+2026-04-23T04:31:27Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:36:32Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:41:37Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:44:16Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T04:46:42Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:51:47Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T04:56:52Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T05:01:57Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T05:07:02Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T05:12:07Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T05:18:06Z INF Lost connection with the edge connIndex=0
+2026-04-23T05:18:06Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T05:18:06Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T05:18:06Z ERR failed to serve incoming request error="Error shutting down control stream: context canceled"
+2026-04-23T05:18:06Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2026-04-23T05:18:19Z INF Registered tunnel connection connIndex=0 connection=93d2b3da-9a06-4e6b-a1aa-43c5be1f9235 event=0 ip=198.41.192.77 location=sin17 protocol=http2
+2026-04-23T05:18:55Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T05:24:00Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T05:29:05Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T05:34:10Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:01:50Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:02:40Z INF Lost connection with the edge connIndex=0
+2026-04-23T06:02:40Z ERR Serve tunnel error error="connection with edge closed" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:02:40Z INF Retrying connection in up to 1s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:02:40Z ERR failed to serve incoming request error="Error shutting down control stream: context canceled"
+2026-04-23T06:02:40Z ERR Connection terminated error="connection with edge closed" connIndex=0
+2026-04-23T06:02:51Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:02:51Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:02:51Z INF Retrying connection in up to 4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:02:54Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:03:34Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:03:34Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:03:34Z INF Retrying connection in up to 8s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:03:37Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:04:15Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:04:15Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:04:15Z INF Retrying connection in up to 16s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:04:29Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:06:55Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:07:05Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:07:05Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:07:05Z INF Retrying connection in up to 32s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:07:19Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:08:34Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T06:09:37Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:09:37Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:09:37Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:09:39Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:12:00Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:13:14Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:13:14Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:13:14Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:13:21Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:13:50Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:13:51Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:13:51Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:14:02Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:15:49Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:15:49Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:15:49Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:16:08Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:16:38Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:16:38Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:16:38Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:16:56Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:17:05Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:21:31Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:21:31Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:21:31Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:21:54Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:22:10Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:23:17Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:23:17Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:23:17Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:23:32Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:27:15Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:28:17Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:28:17Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:28:17Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:28:21Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:31:39Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:31:39Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:31:39Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:32:01Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:32:20Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:33:13Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:33:13Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:33:13Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:33:14Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:34:34Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:34:34Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:34:34Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:35:02Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:37:25Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:40:13Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:40:13Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:40:13Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:40:28Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:42:30Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:44:22Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:44:22Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:44:22Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:44:50Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:47:35Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:48:09Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:48:09Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:48:09Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:48:11Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:50:16Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:50:16Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:50:16Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:50:27Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:50:32Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:50:32Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:50:32Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:50:54Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:52:40Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T06:54:07Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:54:07Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:54:07Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:54:13Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:57:08Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T06:57:08Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:57:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T06:57:32Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T06:57:45Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:01:39Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:01:39Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:01:39Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:02:01Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:02:52Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:05:31Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:05:31Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:05:31Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:05:51Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:06:25Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:06:25Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:06:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:06:54Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:07:57Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:08:36Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T07:09:50Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:09:51Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:09:51Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:09:56Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:13:02Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:13:02Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:13:02Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:13:02Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:13:28Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:13:47Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:13:47Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:13:47Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:14:15Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:16:25Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:16:25Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:16:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:16:41Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:18:07Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:18:30Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:18:30Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:18:30Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:18:36Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:22:47Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:22:47Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:22:47Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:23:12Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:23:15Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:27:09Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:27:09Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:27:09Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:27:22Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:28:17Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:32:07Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:32:07Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:32:07Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:32:35Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:33:22Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:35:38Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:35:38Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:35:38Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:35:49Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:38:26Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:40:46Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:40:46Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:40:46Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:41:02Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:42:19Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:42:19Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:42:19Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:42:21Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:43:32Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:44:23Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:44:23Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:44:23Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:44:34Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:48:36Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:48:58Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:48:58Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:48:58Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:49:13Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:52:07Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:52:07Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:52:07Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:52:09Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:52:34Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:52:34Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:52:34Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:53:02Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:53:41Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T07:54:19Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:54:19Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:54:19Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:54:44Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:57:23Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T07:57:24Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:57:24Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T07:57:42Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T07:58:46Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:00:06Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:00:06Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:00:06Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:00:29Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:03:51Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:05:14Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:05:14Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:05:14Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:05:45Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:08:05Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:08:05Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:08:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:08:23Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:08:36Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T08:08:56Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:09:55Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:09:55Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:09:55Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:10:07Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:14:01Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:14:36Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:14:36Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:14:36Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:14:58Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:19:06Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:19:17Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:19:17Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:19:17Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:19:34Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:21:12Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:21:12Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:21:12Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:21:43Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:25:33Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:25:48Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:25:48Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:25:48Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:26:11Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:28:54Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:28:54Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:28:54Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:29:09Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:30:38Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:33:19Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:33:19Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:33:19Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:33:24Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:35:43Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:36:02Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:36:02Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:36:02Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:36:11Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:40:48Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:41:07Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:41:07Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:41:07Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:41:10Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:45:16Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:45:16Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:45:16Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:45:32Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:45:53Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:47:36Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:47:36Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:47:36Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:47:50Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:50:58Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:53:10Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:53:10Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:53:10Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:53:35Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:55:23Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:55:23Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:55:23Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:55:33Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:56:03Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T08:59:08Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:59:08Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:59:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:59:15Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T08:59:57Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T08:59:57Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T08:59:57Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:00:16Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:01:08Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:03:57Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:03:57Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:03:57Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:04:16Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:06:13Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:06:33Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:06:33Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:06:33Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:07:00Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:08:11Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:08:11Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:08:11Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:08:25Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:09:57Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T09:11:18Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:12:44Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:12:44Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:12:44Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:13:02Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:14:06Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:14:06Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:14:06Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:14:32Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:16:23Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:17:19Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:17:19Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:17:19Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:17:39Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:17:59Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:17:59Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:17:59Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:18:03Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:21:28Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:21:43Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:21:43Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:21:43Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:22:08Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:26:33Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:26:53Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:26:53Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:26:53Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:27:06Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:28:29Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:28:29Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:28:29Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:28:55Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:29:53Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:29:53Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:29:53Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:30:24Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:31:38Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:32:31Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:32:31Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:32:31Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:33:01Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:35:17Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:35:17Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:35:17Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:35:41Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:36:43Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:40:08Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:40:08Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:40:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:40:35Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:41:48Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:43:38Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:43:38Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:43:38Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:44:03Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:45:16Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:45:16Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:45:16Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:45:46Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:46:52Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:47:54Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:47:54Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:47:54Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:48:00Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:50:24Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:50:24Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:50:24Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:50:32Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:51:57Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:55:19Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:55:19Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:55:19Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:55:48Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T09:57:02Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T09:59:53Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T09:59:53Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:59:53Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T09:59:58Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:00:06Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:00:06Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:00:06Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:00:34Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:02:07Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:05:28Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:05:28Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:05:28Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:05:35Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:07:12Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:07:17Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:07:17Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:07:17Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:07:26Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:09:57Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T10:11:24Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:11:24Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:11:24Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:11:54Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:12:17Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:14:56Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:14:56Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:14:56Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:15:27Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:15:46Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:15:46Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:15:46Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:16:01Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:17:22Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:18:22Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:18:22Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:18:22Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:18:28Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:20:40Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:20:40Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:20:40Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:21:05Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:22:27Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:25:36Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:25:36Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:25:36Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:25:41Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:26:15Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:26:15Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:26:15Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:26:24Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:27:32Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:28:08Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:28:08Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:28:08Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:28:26Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:29:57Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:29:57Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:29:57Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:30:18Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:31:58Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:31:58Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:31:58Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:32:02Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:32:37Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:36:33Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:36:33Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:36:33Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:36:46Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:37:42Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:42:02Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:42:02Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:42:02Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:42:09Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:42:47Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:45:25Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:45:25Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:45:25Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:45:46Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:47:52Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:49:18Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:49:18Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:49:18Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:49:35Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:49:51Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:49:51Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:49:51Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:50:23Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:52:57Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:55:33Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:55:33Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:55:33Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:56:04Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:57:47Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:57:47Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:57:47Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:57:59Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T10:58:02Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T10:59:05Z ERR failed to serve incoming request error="Unauthorized: Tunnel not found"
+2026-04-23T10:59:05Z ERR Register tunnel error from server side error="Unauthorized: Tunnel not found" connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:59:05Z INF Retrying connection in up to 1m4s connIndex=0 event=0 ip=198.41.192.77
+2026-04-23T10:59:15Z ERR Connection terminated error="Unauthorized: Tunnel not found" connIndex=0
+2026-04-23T11:03:25Z INF Initiating graceful shutdown due to signal terminated ...

@@ -1,0 +1,41 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "rm -f public/hot && vite build",
+        "dev": "vite",
+        "cap:add:android": "cap add android",
+        "cap:sync:android": "cap sync android",
+        "cap:open:android": "cap open android"
+    },
+    "dependencies": {
+        "@capacitor-community/fcm": "^7.3.0",
+        "@capacitor/android": "^7.4.3",
+        "@capacitor/core": "^7.4.3",
+        "@capacitor/ios": "^7.6.2",
+        "@capacitor/push-notifications": "^7.0.6",
+        "@ionic/vue": "^8.8.4",
+        "@ionic/vue-router": "^8.8.4",
+        "@tailwindcss/vite": "^4.1.11",
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^2.0",
+        "tailwindcss": "^4.0.7"
+    },
+    "optionalDependencies": {
+        "@rollup/rollup-darwin-x64": "4.9.5",
+        "@tailwindcss/oxide-darwin-x64": "^4.0.1",
+        "lightningcss-darwin-x64": "^1.29.1"
+    },
+    "devDependencies": {
+        "@capacitor/cli": "^7.4.3",
+        "typescript": "^5.9.2",
+        "vite": "^7.0.0",
+        "vite-plugin-pwa": "^1.2.0"
+    },
+    "overrides": {
+        "esbuild": "0.24.0"
+    }
+}

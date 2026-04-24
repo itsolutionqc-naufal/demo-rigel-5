@@ -1,0 +1,37 @@
+2026-04-23T01:36:04Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps
+2026-04-23T01:36:04Z INF Requesting new quick Tunnel on trycloudflare.com...
+2026-04-23T01:36:09Z INF +--------------------------------------------------------------------------------------------+
+2026-04-23T01:36:09Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2026-04-23T01:36:09Z INF |  https://puts-achievement-prot-added.trycloudflare.com                                     |
+2026-04-23T01:36:09Z INF +--------------------------------------------------------------------------------------------+
+2026-04-23T01:36:09Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-04-23T01:36:09Z INF Version 2026.2.0 (Checksum f32ece46ec52d21d322077b94cdc76bdd602f3061dfaaefd7fb0aa424268cad5)
+2026-04-23T01:36:09Z INF GOOS: darwin, GOVersion: go1.24.2, GoArch: amd64
+2026-04-23T01:36:09Z INF Settings: map[ha-connections:1 loglevel:info no-autoupdate:true p:http2 protocol:http2 url:http://127.0.0.1:8000]
+2026-04-23T01:36:19Z ERR Failed to fetch features, default to disable error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T01:36:19Z INF Generated Connector ID: 7e9062a6-7506-4cc1-a64d-766f9deb5c93
+2026-04-23T01:36:29Z INF Initial protocol http2
+2026-04-23T01:36:29Z INF ICMP proxy will use 192.168.1.94 as source for IPv4
+2026-04-23T01:36:29Z INF ICMP proxy will use fe80::1454:7b61:705d:d632 in zone en0 as source for IPv6
+2026-04-23T01:36:29Z INF Created ICMP proxy listening on 192.168.1.94:0
+2026-04-23T01:36:39Z INF ICMP proxy will use 192.168.1.94 as source for IPv4
+2026-04-23T01:36:39Z INF ICMP proxy will use fe80::1454:7b61:705d:d632 in zone en0 as source for IPv6
+2026-04-23T01:36:39Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-04-23T01:36:49Z INF Registered tunnel connection connIndex=0 connection=b5956a7c-7f06-4c32-898e-6622f73f9060 event=0 ip=198.41.200.73 location=sin11 protocol=http2
+2026-04-23T01:36:54Z ERR Failed to initialize DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T01:41:59Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T01:47:04Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T01:52:09Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T01:57:14Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:02:19Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:04:46Z ERR  error="Incoming request ended abruptly: context canceled" connIndex=0 event=1 ingressRule=0 originService=http://127.0.0.1:8000
+2026-04-23T02:04:46Z ERR failed to serve incoming request error="Failed to proxy HTTP: Incoming request ended abruptly: context canceled"
+2026-04-23T02:07:24Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:12:29Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:17:34Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:22:39Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:27:44Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:32:49Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:36:29Z ERR Failed to refresh feature selector error="lookup cfd-features.argotunnel.com on 182.8.64.13:53: dial udp 182.8.64.13:53: i/o timeout"
+2026-04-23T02:37:54Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"
+2026-04-23T02:42:59Z ERR Failed to refresh DNS local resolver error="lookup region1.v2.argotunnel.com: i/o timeout"

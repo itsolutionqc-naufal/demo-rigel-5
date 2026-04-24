@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Rigel Coins</string>
+    <string name="title_activity_main">Rigel Coins</string>
+    <string name="package_name">com.rigel.webview</string>
+    <string name="custom_url_scheme">com.rigel.webview</string>
+</resources>
