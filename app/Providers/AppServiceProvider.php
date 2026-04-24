@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
+use Kreait\Firebase\Factory;
+use Kreait\Firebase\Contract\Messaging;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,7 +18,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(Messaging::class, function ($app) {
+            $credentialsPath = config('app.firebase_credentials_path', storage_path('app/firebase-service-account.json'));
+            
+            if (!file_exists($credentialsPath)) {
+                throw new \RuntimeException("Firebase credentials not found at: {$credentialsPath}");
+            }
+
+            $factory = (new Factory)
+                ->withServiceAccount(json_decode(file_get_contents($credentialsPath), true));
+
+            return $factory->createMessaging();
+        });
     }
 
     /**
