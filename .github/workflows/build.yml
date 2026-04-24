@@ -33,9 +33,6 @@ jobs:
       - name: Build Web App
         run: npm run build
 
-      - name: Add iOS platform
-        run: npx cap add ios
-
       - name: Sync Capacitor iOS
         run: npx cap sync ios
 
