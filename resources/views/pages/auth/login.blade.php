@@ -170,6 +170,15 @@
             const enabled = @json($downloadPromptEnabled);
             if (!enabled) return;
 
+            // Jangan tampilkan modal kalau sudah di dalam aplikasi Android/iOS
+            const isNativeApp = (
+                window.Capacitor?.isNativePlatform?.() ||
+                window.Capacitor?.platform === 'android' ||
+                window.Capacitor?.platform === 'ios' ||
+                navigator.userAgent.includes('Capacitor')
+            );
+            if (isNativeApp) return;
+
             const lastClosedKey = 'rigel_download_prompt_last_closed_date';
             const today = new Date();
             const todayKey = today.toISOString().slice(0, 10); // YYYY-MM-DD
