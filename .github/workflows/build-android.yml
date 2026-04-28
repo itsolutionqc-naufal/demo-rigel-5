@@ -42,15 +42,20 @@ jobs:
 
       # ── 5. Install npm dependencies ──────────────────────────
       - name: Install npm dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm install --legacy-peer-deps --ignore-scripts
+        env:
+          npm_config_optional: false
 
       # ── 6. Build frontend assets (Vite) ──────────────────────
       - name: Build frontend assets
-        run: npm run build
+        run: npx vite build
+        env:
+          NODE_ENV: production
+          CI: false
 
       # ── 7. Sync Capacitor ke Android ─────────────────────────
       - name: Capacitor sync Android
-        run: npx cap sync android
+        run: npx cap sync android --inline
 
       # ── 8. Fix local.properties untuk CI ─────────────────────
       - name: Set Android SDK path
@@ -91,8 +96,9 @@ jobs:
 
       # ── 13. Summary ───────────────────────────────────────────
       - name: Build Summary
+        if: always()
         run: |
-          echo "## ✅ Build Selesai" >> $GITHUB_STEP_SUMMARY
+          echo "## Build Android APK" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Info | Value |" >> $GITHUB_STEP_SUMMARY
           echo "|------|-------|" >> $GITHUB_STEP_SUMMARY
@@ -100,5 +106,3 @@ jobs:
           echo "| Commit | \`${{ github.sha }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| Build # | \`${{ github.run_number }}\` |" >> $GITHUB_STEP_SUMMARY
           echo "| Type | \`${{ github.event.inputs.build_type || 'debug' }}\` |" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "APK tersedia di tab **Artifacts** di atas." >> $GITHUB_STEP_SUMMARY
