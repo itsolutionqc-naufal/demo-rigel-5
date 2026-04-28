@@ -69,3 +69,33 @@ select:focus[data-flux-control] {
 /* \[:where(&)\]:size-4 {
     @apply size-4;
 } */
+
+/* ============================================================
+   Android / iOS Safe Area — Capacitor WebView
+   Mencegah konten tertutup status bar & navigation bar HP
+   ============================================================ */
+
+/* Pastikan body tidak masuk ke area status bar */
+body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+}
+
+/* Sidebar flux — kompensasi safe area atas */
+flux-sidebar,
+[data-flux-sidebar] {
+    padding-top: env(safe-area-inset-top) !important;
+}
+
+/* Header mobile flux — kompensasi safe area atas */
+flux-header,
+[data-flux-header] {
+    padding-top: env(safe-area-inset-top) !important;
+}
+
+/* Toastr — jangan sampai tertutup navigation bar bawah */
+#toast-container {
+    padding-bottom: env(safe-area-inset-bottom) !important;
+}
