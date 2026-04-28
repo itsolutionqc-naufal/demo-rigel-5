@@ -33,7 +33,8 @@ export default defineConfig({
     build: {
         minify: 'esbuild',
         target: 'es2015',
-        cssMinify: true,
+        // Use esbuild for CSS minification (cross-platform compatible)
+        cssMinify: 'esbuild',
         sourcemap: false,
     },
     server: {
