@@ -31,12 +31,9 @@ export default defineConfig({
         }),
     ],
     build: {
-        // Production optimizations - use esbuild for faster builds
         minify: 'esbuild',
         target: 'es2015',
-        // CSS optimization
-        cssMinify: 'lightningcss',
-        // No sourcemaps for production
+        cssMinify: true,
         sourcemap: false,
     },
     server: {
@@ -45,7 +42,6 @@ export default defineConfig({
             ignored: ['**/storage/framework/views/**'],
         },
     },
-    // Preload modules for faster initial load
     optimizeDeps: {
         include: ['alpinejs'],
     },
