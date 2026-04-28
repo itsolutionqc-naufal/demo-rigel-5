@@ -40,11 +40,11 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      # ── 5. Install npm dependencies (skip optional/platform-specific) ──
+      # ── 5. Install npm dependencies ──────────────────────────
       - name: Install npm dependencies
-        run: npm install --legacy-peer-deps --no-optional
-        env:
-          ROLLUP_SKIP_NODEJS_NATIVE: true
+        run: |
+          npm install --legacy-peer-deps --no-optional
+          npm install lightningcss --legacy-peer-deps
 
       # ── 6. Build frontend assets (Vite) ──────────────────────
       - name: Build frontend assets
@@ -54,7 +54,6 @@ jobs:
         env:
           NODE_ENV: production
           CI: false
-          ROLLUP_SKIP_NODEJS_NATIVE: true
 
       # ── 7. Sync Capacitor ke Android ─────────────────────────
       - name: Capacitor sync Android
