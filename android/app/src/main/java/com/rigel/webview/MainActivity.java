@@ -36,17 +36,14 @@ public class MainActivity extends BridgeActivity {
                 WebView webView = (getBridge() != null) ? getBridge().getWebView() : null;
 
                 if (webView != null) {
-                    // Coba custom navigation via JavaScript (sesuai permintaan: back ke halaman sebelumnya)
-                    // Panggil fungsi goBack() yang ada di window.RigelNavigation
+                    // Coba custom navigation via JavaScript (back ke halaman sebelumnya)
                     webView.evaluateJavascript(
                         "window.RigelNavigation && window.RigelNavigation.goBack()",
-                        value -> Log.d(TAG, "Custom back navigation called: " + value);
+                        null
                     );
 
-                    // Langsung cek apakah webView bisa goBack sebagai fallback
-                    // Note: evaluateJavascript async, jadi fallback jalan juga
+                    // Fallback ke webView history
                     if (!webView.canGoBack()) {
-                        // Tidak ada custom history dan webView history, exit dengan double tap
                         long now = System.currentTimeMillis();
                         if (now - lastBackPressedAt < BACK_PRESS_INTERVAL_MS) {
                             finishAffinity();
@@ -55,12 +52,10 @@ public class MainActivity extends BridgeActivity {
                         lastBackPressedAt = now;
                         android.widget.Toast.makeText(MainActivity.this, "Tap again to exit", android.widget.Toast.LENGTH_SHORT).show();
                     } else {
-                        // Ada webView history
                         lastBackPressedAt = 0L;
                         webView.goBack();
                     }
                 } else {
-                    // WebView null, exit app
                     long now = System.currentTimeMillis();
                     if (now - lastBackPressedAt < BACK_PRESS_INTERVAL_MS) {
                         finishAffinity();
