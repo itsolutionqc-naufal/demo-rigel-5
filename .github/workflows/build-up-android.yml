@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: "npm"
 
       - name: Setup Java
@@ -46,7 +46,7 @@ jobs:
           test -f vendor/livewire/flux/dist/flux.css
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Build web
         run: npm run build
