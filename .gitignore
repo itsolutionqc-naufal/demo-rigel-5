@@ -32,3 +32,4 @@ storage/app/google-services.json
 **/caddy
 frankenphp
 frankenphp-worker.php
+storage/firebase-credentials.json
