@@ -1,0 +1,20 @@
+# Example Cloudflare Tunnel config.
+# Copy to: .cloudflared/config.yml (ignored by git)
+#
+# Setup once:
+#   cloudflared tunnel login
+#   cloudflared tunnel create demo_rigel_5
+#   cloudflared tunnel route dns demo_rigel_5 webhook.agencyrigel.com
+#
+# Then set:
+#   CF_TUNNEL_NAME=demo_rigel_5
+#   APP_URL=https://webhook.agencyrigel.com
+#
+tunnel: demo_rigel_5
+credentials-file: /ABSOLUTE/PATH/TO/.cloudflared/<TUNNEL-UUID>.json
+
+ingress:
+  - hostname: webhook.agencyrigel.com
+    service: http://127.0.0.1:8000
+  - service: http_status:404
+
