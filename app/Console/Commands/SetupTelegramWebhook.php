@@ -10,6 +10,7 @@ class SetupTelegramWebhook extends Command
 {
     protected $signature = 'telegram:setup-webhook
         {url? : Webhook URL (defaults to APP_URL/telegram/webhook)}
+        {--url= : Webhook URL (same as the <url> argument)}
         {--bot= : Telegram bot ID from telegram_bots table}
         {--all-active : Set webhook for all active bots}
         {--secret= : Optional Telegram secret_token for webhook validation}';
@@ -17,7 +18,8 @@ class SetupTelegramWebhook extends Command
 
     public function handle()
     {
-        $url = $this->argument('url')
+        $url = $this->option('url')
+            ?: $this->argument('url')
             ?: rtrim((string) config('app.url'), '/') . '/telegram/webhook';
 
         if (

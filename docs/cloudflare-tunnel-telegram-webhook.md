@@ -62,8 +62,9 @@ Kamu bisa pakai salah satu:
   - `php artisan telegram:setup-webhook --all-active`
 - Atau explicit URL (sesuai contoh kamu):
   - `php artisan telegram:setup-webhook https://webhook.agencyrigel.com/telegram/webhook --all-active`
+  - atau pakai opsi `--url`:
+    - `php artisan telegram:setup-webhook --url=https://webhook.agencyrigel.com/telegram/webhook --all-active`
 
 Kalau endpointnya bisa diakses, ping:
 
 - `curl -i https://webhook.agencyrigel.com/telegram/webhook`
-
