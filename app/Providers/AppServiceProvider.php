@@ -2,10 +2,12 @@
 
 namespace App\Providers;
 
+use App\Support\NullFirebaseMessaging;
 use Carbon\CarbonImmutable;
 use Illuminate\Auth\Middleware\RedirectIfAuthenticated;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Validation\Rules\Password;
 use Kreait\Firebase\Factory;
@@ -25,12 +27,22 @@ class AppServiceProvider extends ServiceProvider
                 : base_path($configuredPath);
 
             if (! file_exists($credentialsPath)) {
-                throw new \RuntimeException("Firebase credentials not found at: {$credentialsPath}");
+                Log::info('FCM disabled: Firebase credentials file not found', [
+                    'path' => $credentialsPath,
+                ]);
+
+                return new NullFirebaseMessaging("Firebase credentials not found at: {$credentialsPath}");
             }
 
             $credentials = json_decode((string) file_get_contents($credentialsPath), true);
             if (! is_array($credentials)) {
-                throw new \RuntimeException('Invalid Firebase credentials JSON at: '.$credentialsPath.' ('.json_last_error_msg().')');
+                $error = json_last_error_msg();
+                Log::warning('FCM disabled: invalid Firebase credentials JSON', [
+                    'path' => $credentialsPath,
+                    'error' => $error,
+                ]);
+
+                return new NullFirebaseMessaging("Invalid Firebase credentials JSON at: {$credentialsPath} ({$error})");
             }
 
             $factory = (new Factory)

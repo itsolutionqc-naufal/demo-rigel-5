@@ -1,5 +1,10 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
+const serverUrl =
+  process.env.VITE_CAP_SERVER_URL ||
+  process.env.CAP_SERVER_URL ||
+  'https://agencyrigel.com';
+
 const config: CapacitorConfig = {
   appId: 'com.rigel.webview',
   appName: 'Rigel Coins',
@@ -10,7 +15,7 @@ const config: CapacitorConfig = {
     },
   },
   server: {
-    url: 'https://rigel.demowebjalan.com',
+    url: serverUrl,
     cleartext: false,
   },
 };

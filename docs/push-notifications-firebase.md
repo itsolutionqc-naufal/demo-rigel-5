@@ -36,12 +36,14 @@ Dokumen ini menjelaskan cara:
 
 1. Firebase Console → Project Settings → tab **Service accounts**
 2. Klik **Generate new private key** (JSON)
-3. Simpan file di server, contoh:
+3. Simpan file di server **apa adanya** (jangan diedit), contoh:
    - `storage/app/firebase-service-account.json`
 4. Tambah ke `.env`:
    - `FIREBASE_CREDENTIALS=/full/path/to/storage/app/firebase-service-account.json`
 
 > Jangan commit file JSON ini ke git.
+>
+> Kalau file JSON rusak/tidak valid (mis. ada line-break “nyasar” di dalam value), Laravel tetap akan mengizinkan update status transaksi, tapi push notification akan gagal dan error-nya akan muncul di `fcm_error`.
 
 ## 4) Token device tersimpan ke user
 
@@ -78,4 +80,3 @@ Output APK:
 2. Login
 3. Ambil token di DB `device_tokens.token`
 4. Firebase Console → Cloud Messaging → test send ke token tersebut
-

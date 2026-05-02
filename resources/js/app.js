@@ -146,24 +146,80 @@ async function initNativePushNotifications() {
             return;
         }
 
-        const csrf = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
-        if (!csrf) {
-            console.warn('[push] missing CSRF token meta tag');
-            return;
-        }
+        const PLATFORM = String(Capacitor.getPlatform() || 'android');
+        const STORAGE_TOKEN = 'rigel_fcm_token';
+        const STORAGE_REGISTERED = 'rigel_fcm_token_registered';
+        const STORAGE_ATTEMPTS = 'rigel_fcm_token_attempts';
 
-        await fetch('/device-tokens', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-Requested-With': 'XMLHttpRequest',
-                'X-CSRF-TOKEN': csrf,
-            },
-            body: JSON.stringify({
-                token: fcmToken,
-                platform: Capacitor.getPlatform(),
-            }),
-        });
+        localStorage.setItem(STORAGE_TOKEN, fcmToken);
+
+        const isAlreadyRegistered = (() => {
+            try {
+                const existing = JSON.parse(localStorage.getItem(STORAGE_REGISTERED) || 'null');
+                return existing && existing.token === fcmToken && existing.platform === PLATFORM;
+            } catch {
+                return false;
+            }
+        })();
+
+        const postDeviceToken = async () => {
+            const csrf = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content');
+            if (!csrf) {
+                throw new Error('missing CSRF token meta tag');
+            }
+
+            const response = await fetch('/device-tokens', {
+                method: 'POST',
+                credentials: 'include',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'X-CSRF-TOKEN': csrf,
+                },
+                body: JSON.stringify({
+                    token: fcmToken,
+                    platform: PLATFORM,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error(`device-tokens HTTP ${response.status}`);
+            }
+
+            const contentType = response.headers.get('content-type') || '';
+            if (!contentType.includes('application/json')) {
+                throw new Error('device-tokens returned non-JSON (likely not authenticated)');
+            }
+
+            const data = await response.json();
+            if (!data?.success) {
+                throw new Error('device-tokens returned success=false');
+            }
+
+            localStorage.setItem(
+                STORAGE_REGISTERED,
+                JSON.stringify({ token: fcmToken, platform: PLATFORM, at: Date.now() }),
+            );
+            localStorage.removeItem(STORAGE_ATTEMPTS);
+        };
+
+        const scheduleRetry = (reason) => {
+            const maxAttempts = 6;
+            const attempts = Number.parseInt(localStorage.getItem(STORAGE_ATTEMPTS) || '0', 10) || 0;
+            if (attempts >= maxAttempts) {
+                console.warn('[push] device token registration giving up', { reason });
+                return;
+            }
+
+            localStorage.setItem(STORAGE_ATTEMPTS, String(attempts + 1));
+            const delayMs = Math.min(60_000, 3_000 * Math.pow(2, attempts));
+            console.warn('[push] device token registration retry scheduled', { reason, attempts: attempts + 1, delayMs });
+            setTimeout(() => void postDeviceToken().catch((err) => scheduleRetry(err?.message || String(err))), delayMs);
+        };
+
+        if (!isAlreadyRegistered) {
+            await postDeviceToken().catch((err) => scheduleRetry(err?.message || String(err)));
+        }
     } catch (error) {
         console.error('[push] init error', error);
     }
