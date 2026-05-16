@@ -77,6 +77,18 @@ async function initNativePushNotifications() {
             return;
         }
 
+        if (Capacitor.getPlatform() === 'android') {
+            await PushNotifications.createChannel({
+                id: 'rigel_alerts',
+                name: 'Rigel Alerts',
+                description: 'Notifications for transaction updates',
+                importance: 5,
+                visibility: 1,
+                sound: 'default',
+                vibration: true,
+            });
+        }
+
         await PushNotifications.register();
 
         PushNotifications.addListener('registration', async (token) => {
