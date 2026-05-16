@@ -16,8 +16,8 @@ const config: CapacitorConfig = {
     },
   },
   server: {
-    url: 'https://ebooks-strips-leaving-stereo.trycloudflare.com',
-    cleartext: true,
+    url: 'https://agencyrigel.com',
+    cleartext: false,
   },
 };
 
