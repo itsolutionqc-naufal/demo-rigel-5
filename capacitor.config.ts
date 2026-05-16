@@ -16,7 +16,7 @@ const config: CapacitorConfig = {
     },
   },
   server: {
-    url: 'https://offices-bangkok-syndrome-region.trycloudflare.com',
+    url: 'https://ebooks-strips-leaving-stereo.trycloudflare.com',
     cleartext: true,
   },
 };
