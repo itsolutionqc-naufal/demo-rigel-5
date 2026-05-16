@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1079502009881",
+    "project_id": "comrigelwebview",
+    "storage_bucket": "comrigelwebview.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079502009881:android:89522b450b208aecad1c88",
+        "android_client_info": {
+          "package_name": "com.rigel.webview"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5s9xI-cwZN8c0xSdb5AExBlLJRii4QgU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
