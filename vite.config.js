@@ -16,10 +16,10 @@ export default defineConfig({
             registerType: 'autoUpdate',
             includeAssets: ['favicon.ico', 'images/logo.png'],
             manifest: {
-                name: 'Rigel Coins',
-                short_name: 'Rigel',
-                description: 'Rigel Coins Mobile App',
-                theme_color: '#ffffff',
+                name: 'AgencyRigel.com',
+                short_name: 'AgencyRigel',
+                description: 'AgencyRigel.com Mobile App',
+                theme_color: '#611f95',
                 icons: [
                     {
                         src: 'images/logo.png',

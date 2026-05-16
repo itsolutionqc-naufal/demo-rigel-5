@@ -16,8 +16,8 @@ const config: CapacitorConfig = {
     },
   },
   server: {
-    url: 'https://agencyrigel.com',
-    cleartext: false,
+    url: 'https://offices-bangkok-syndrome-region.trycloudflare.com',
+    cleartext: true,
   },
 };
 
